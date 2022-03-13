@@ -1,0 +1,212 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: #000;
+}
+
+header {
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: cover;
+}
+
+header #logo {
+  position: relative;
+  z-index: 10;
+  width: 100px;
+}
+
+header .feature {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #111), color-stop(90%, transparent));
+  background: linear-gradient(to top, #111 10%, transparent 90%);
+  height: 300px;
+}
+
+header .feature .feature-h {
+  border: 1px solid;
+  width: 100%;
+  height: 300px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(30%, #111), color-stop(70%, transparent));
+  background: linear-gradient(to right, #111 30%, transparent 70%);
+}
+
+header .feature .info {
+  max-width: 40%;
+  height: 230px;
+  margin-left: 20px;
+  margin-top: 70px;
+  padding-bottom: 20px;
+}
+
+header .feature .info .movie-disc {
+  width: 90%;
+  word-wrap: break-word;
+  max-height: 190px;
+}
+
+header .feature .info .movie-disc p {
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+header .feature .info .btn {
+  padding: 5px 0;
+  width: 200px;
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+header .feature .info a {
+  color: white;
+  background-color: #333;
+  border-radius: 5px;
+  padding: 7px;
+  font-size: 13px;
+}
+
+header .feature .info #btn-play {
+  background-color: white;
+  color: #000;
+}
+
+header .feature .info #btn-list {
+  margin-left: 10px;
+}
+
+header .feature .info h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 100%;
+}
+
+.container .movie-list {
+  width: 100%;
+  padding-left: 20px;
+}
+
+.container .movie-list h2 {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.container .movie-list .title {
+  margin-top: 10px;
+}
+
+.container .movie-list .sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.container .movie-list .sub article {
+  width: 105px;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all ease 0.3;
+  transition: all ease 0.3;
+}
+
+.container .movie-list .sub article:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.container .movie-list .sub article img {
+  width: 100%;
+  height: 100%;
+}
+
+#container-movie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: cover;
+  height: 300px;
+}
+
+#container-movie .info-movie {
+  width: 350px;
+  max-height: 200px;
+  margin: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#container-movie .info-movie h1 {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+#container-movie .info-movie p {
+  color: whitesmoke;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .end {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+footer .end p {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+}
+/*# sourceMappingURL=styles.css.map */
