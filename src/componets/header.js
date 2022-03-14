@@ -32,7 +32,7 @@ loadFilme(){
         return(
             <header id="header">
                 <div>
-                <Link href="/"><img src={Logo} id='logo'/></Link>
+                <Link to={"/"}><img src={Logo} id='logo'/></Link>
                 </div>
                 <div className="feature">
                   <div className="feature-h"> 
