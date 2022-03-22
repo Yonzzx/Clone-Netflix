@@ -76,12 +76,13 @@ header .feature .info .movie-popularity p {
 header .feature .info .movie-disc {
   width: 90%;
   max-height: 200px;
+  padding: 20px 0;
 }
 
 header .feature .info .movie-disc p {
   color: white;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 15px;
   text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box;
@@ -127,6 +128,7 @@ header .feature .info h1 {
 .container .movie-list {
   width: 100%;
   padding-left: 20px;
+  overflow: hidden;
 }
 
 .container .movie-list h2 {
@@ -151,7 +153,6 @@ header .feature .info h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: hidden;
 }
 
 .container .movie-list .sub .ArrowLeft, .container .movie-list .sub .ArrowRight {
@@ -159,7 +160,7 @@ header .feature .info h1 {
   color: white;
   font-size: 40px;
   width: 40px;
-  height: 180px;
+  height: 300px;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 99;
   display: -webkit-box;
@@ -187,7 +188,7 @@ header .feature .info h1 {
 }
 
 .container .movie-list .sub article {
-  width: 120px;
+  width: 200px;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
   -webkit-transition: all ease 0.3;

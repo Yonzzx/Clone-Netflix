@@ -1,25 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {useParams} from 'react-router-dom';
+import Api from "../Api";
 
 function Movie(){
-
+  const [Movie, setMovie] = useState([])
     const {id} = useParams();
-    let url = `https://api.themoviedb.org/3/tv/${id}?api_key=6415ac1fc5355bf2764376eb661c445e&language=pt-br`
-    console.log(url)
-  fetch(url)
-  .then(r => r.json())
-  .then((json)=>{
-    document.getElementById('title').innerHTML = `${json.name}`
-    document.getElementById('sinopse').innerHTML = `${json.overview}`
-  document.getElementById('container-movie').style.backgroundImage = `url(http://image.tmdb.org/t/p/original${json.backdrop_path})`
-  console.log(json)
-  })
+    useEffect(()=>{
+   async function GetMovie(){
+    let res = await Api.get(`tv/${id}?api_key=6415ac1fc5355bf2764376eb661c445e&language=pt-br`)
+      setMovie(res.data)
+    }
+    GetMovie();
+    },[])
  
     return(
-<div id="container-movie" >
+<div id="container-movie" style={{
+       backgroundImage: `url(http://image.tmdb.org/t/p/original${Movie.backdrop_path})`
+}} >
   <div className="info-movie">
-  <h1 id="title"></h1>
-  <p id="sinopse"></p>
+  <h1>{Movie.name}</h1>
+  <p>{Movie.overview}</p>
   </div>
 </div>
     );
